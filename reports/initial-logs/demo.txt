@@ -1,0 +1,14 @@
+$ /opt/homebrew/opt/python@3.14/bin/python3.14 run.py demo --solution
+{
+  "scope": "CPU mathematical integration only",
+  "variant": "solution",
+  "seed": 20260917,
+  "add_cases": 8,
+  "softmax_cases": 4,
+  "max_add_abs_error": 0.0,
+  "max_softmax_abs_error": 0.0,
+  "status": "passed",
+  "npu_validated": false
+}
+
+exit_code=0

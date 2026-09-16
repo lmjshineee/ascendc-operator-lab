@@ -1,0 +1,21 @@
+$ /opt/homebrew/opt/python@3.14/bin/python3.14 run.py test 03
+Local tests, variant=problem; not an NPU validation.
+test_add_against_golden_and_no_mutation (learning_tests.PipelineTests.test_add_against_golden_and_no_mutation) ... ERROR
+
+======================================================================
+ERROR: test_add_against_golden_and_no_mutation (learning_tests.PipelineTests.test_add_against_golden_and_no_mutation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/mingtiangengmanchang/Documents/Codex/2026-09-16/ai-ascend-c-ai-infra-1/outputs/ascendc-operator-lab/tests/test_learning.py", line 116, in test_add_against_golden_and_no_mutation
+    self.assertEqual(self.pipeline.tiled_add(x, y, cores, tile, self.partition), self.golden.add(x, y))
+                     ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mingtiangengmanchang/Documents/Codex/2026-09-16/ai-ascend-c-ai-infra-1/outputs/ascendc-operator-lab/exercises/03_pipeline/problem/pipeline.py", line 8, in tiled_add
+    raise NotImplementedError('TODO L09: implement tiled add')
+NotImplementedError: TODO L09: implement tiled add
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+
+exit_code=1

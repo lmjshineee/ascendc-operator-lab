@@ -1,0 +1,14 @@
+$ /opt/homebrew/opt/python@3.14/bin/python3.14 scripts/doctor.py
+{
+  "python": "3.14.7",
+  "local_python_supported": true,
+  "system": "Darwin",
+  "architecture": "arm64",
+  "git": "/opt/homebrew/bin/git",
+  "cxx": "/usr/bin/c++",
+  "npu_smi": null,
+  "npu_validation": "not_performed",
+  "note": "Executable discovery is not a device health or CANN compatibility check."
+}
+
+exit_code=0

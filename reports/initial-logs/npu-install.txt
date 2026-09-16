@@ -1,0 +1,5 @@
+$ bash scripts/npu.sh install
+TODO: NPU workflow is not connected.
+Read docs/ENVIRONMENT.md; record device/CANN/sample versions, then implement this entry point.
+
+exit_code=2

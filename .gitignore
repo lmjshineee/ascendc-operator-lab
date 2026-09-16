@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+build/
+dist/
+work/
+environment.local.json
+.env
+*.run
+*.o
+*.so
+profiling/

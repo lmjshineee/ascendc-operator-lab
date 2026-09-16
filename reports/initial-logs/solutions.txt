@@ -1,0 +1,23 @@
+$ /opt/homebrew/opt/python@3.14/bin/python3.14 run.py test all --solution
+Local tests, variant=solution; not an NPU validation.
+test_add_contract_and_no_mutation (learning_tests.GoldenTests.test_add_contract_and_no_mutation) ... ok
+test_add_rejects_bad_inputs (learning_tests.GoldenTests.test_add_rejects_bad_inputs) ... ok
+test_softmax_analytical (learning_tests.GoldenTests.test_softmax_analytical) ... ok
+test_softmax_shape_and_nonfinite (learning_tests.GoldenTests.test_softmax_shape_and_nonfinite) ... ok
+test_softmax_stability_translation_and_no_mutation (learning_tests.GoldenTests.test_softmax_stability_translation_and_no_mutation) ... ok
+test_boundary_coverage (learning_tests.TilingTests.test_boundary_coverage) ... ok
+test_handworked_tail (learning_tests.TilingTests.test_handworked_tail) ... ok
+test_invalid_config (learning_tests.TilingTests.test_invalid_config) ... ok
+test_seeded_coverage (learning_tests.TilingTests.test_seeded_coverage) ... ok
+test_add_against_golden_and_no_mutation (learning_tests.PipelineTests.test_add_against_golden_and_no_mutation) ... ok
+test_add_rejects_invalid (learning_tests.PipelineTests.test_add_rejects_invalid) ... ok
+test_empty_and_rejections (learning_tests.PipelineTests.test_empty_and_rejections) ... ok
+test_softmax_analytical_row_independence (learning_tests.PipelineTests.test_softmax_analytical_row_independence) ... ok
+test_softmax_random_shapes_against_golden (learning_tests.PipelineTests.test_softmax_random_shapes_against_golden) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.003s
+
+OK
+
+exit_code=0

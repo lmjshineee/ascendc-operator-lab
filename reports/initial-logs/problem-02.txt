@@ -1,0 +1,25 @@
+$ /opt/homebrew/opt/python@3.14/bin/python3.14 run.py test 02
+Local tests, variant=problem; not an NPU validation.
+test_boundary_coverage (learning_tests.TilingTests.test_boundary_coverage) ...
+  test_boundary_coverage (learning_tests.TilingTests.test_boundary_coverage) (n=0, cores=1, tile=1) ... ERROR
+
+======================================================================
+ERROR: test_boundary_coverage (learning_tests.TilingTests.test_boundary_coverage) (n=0, cores=1, tile=1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/mingtiangengmanchang/Documents/Codex/2026-09-16/ai-ascend-c-ai-infra-1/outputs/ascendc-operator-lab/tests/test_learning.py", line 91, in test_boundary_coverage
+    self.check_invariants(n, cores, tile)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/mingtiangengmanchang/Documents/Codex/2026-09-16/ai-ascend-c-ai-infra-1/outputs/ascendc-operator-lab/tests/test_learning.py", line 68, in check_invariants
+    for core, start, end in self.tiles(n, cores, tile):
+                            ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/mingtiangengmanchang/Documents/Codex/2026-09-16/ai-ascend-c-ai-infra-1/outputs/ascendc-operator-lab/exercises/02_tiling/problem/tiling.py", line 10, in tiles
+    raise NotImplementedError('TODO L05: implement balanced core/tile ranges')
+NotImplementedError: TODO L05: implement balanced core/tile ranges
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+
+exit_code=1

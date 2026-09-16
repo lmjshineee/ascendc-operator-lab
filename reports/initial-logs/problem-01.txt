@@ -1,0 +1,21 @@
+$ /opt/homebrew/opt/python@3.14/bin/python3.14 run.py test 01
+Local tests, variant=problem; not an NPU validation.
+test_add_contract_and_no_mutation (learning_tests.GoldenTests.test_add_contract_and_no_mutation) ... ERROR
+
+======================================================================
+ERROR: test_add_contract_and_no_mutation (learning_tests.GoldenTests.test_add_contract_and_no_mutation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/mingtiangengmanchang/Documents/Codex/2026-09-16/ai-ascend-c-ai-infra-1/outputs/ascendc-operator-lab/tests/test_learning.py", line 27, in test_add_contract_and_no_mutation
+    self.assertEqual(self.ops.add(x, y), [3, 2, 0])
+                     ~~~~~~~~~~~~^^^^^^
+  File "/Users/mingtiangengmanchang/Documents/Codex/2026-09-16/ai-ascend-c-ai-infra-1/outputs/ascendc-operator-lab/exercises/01_golden/problem/ops.py", line 6, in add
+    raise NotImplementedError('TODO L01: implement add')
+NotImplementedError: TODO L01: implement add
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+
+exit_code=1

@@ -1,0 +1,19 @@
+{
+  "status": "unconfigured",
+  "device_model": null,
+  "soc_version": null,
+  "available_cores": null,
+  "local_memory_budget_bytes": null,
+  "os": null,
+  "arch": null,
+  "driver_version": null,
+  "firmware_version": null,
+  "cann_version": null,
+  "compiler_version": null,
+  "toolkit_path": null,
+  "sample_url": null,
+  "sample_commit": null,
+  "build_command": null,
+  "register_command": null,
+  "run_command": null
+}

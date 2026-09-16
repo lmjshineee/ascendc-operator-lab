@@ -1,0 +1,65 @@
+{
+  "seed": 20260917,
+  "target_dtypes": [
+    "float32",
+    "float16"
+  ],
+  "note": "Candidate NPU matrix; local demo uses a small subset and Python floats.",
+  "add_lengths": [
+    0,
+    1,
+    17,
+    31,
+    32,
+    33,
+    257,
+    1024,
+    65537,
+    1048576
+  ],
+  "softmax_shapes": [
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      17
+    ],
+    [
+      8,
+      33
+    ],
+    [
+      32,
+      128
+    ],
+    [
+      4,
+      1024
+    ],
+    [
+      128,
+      1024
+    ]
+  ],
+  "patterns": [
+    "zeros",
+    "equal",
+    "mixed_sign",
+    "seeded_random",
+    "large_finite"
+  ],
+  "negative_cases": [
+    "shape_mismatch",
+    "zero_columns",
+    "ragged",
+    "nonfinite",
+    "unsupported_layout",
+    "excessive_row_width"
+  ]
+}
